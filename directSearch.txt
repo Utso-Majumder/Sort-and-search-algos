@@ -1,0 +1,20 @@
+#Direct searching using while and for
+
+pos1 = -1
+pos2 = -1                                         #setting two preset global positions
+
+def search(list, n) :
+    i = 0
+    while i<len(list) :
+        if list[i]==n :
+            globals()['pos1'] = i                 assigning global vars
+            return True
+        i += 1
+    return False
+
+def searchFor(list, n) :
+    for i in list :
+        if list[i]==n :
+            globals()['pos2']=i
+            return True
+    return False
