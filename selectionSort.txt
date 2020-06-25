@@ -1,0 +1,10 @@
+def selSort(list) :
+    for i in range(0,len(list)-1,1):
+        minPos = i
+        for j in range(i,len(list),1):
+            if list[minPos]>list[j]:
+                minPos = j
+
+        list[minPos],list[i] = list[i],list[minPos]
+
+        print(list)
